@@ -19,13 +19,13 @@ https://610efe6f94a33700127f37f9.tago.run/dashboards/info/6290e3d3d2408f0013fc16
 /Edukit_IOT_WdT: Contains the *.ino file. A dashboard screenshot is also available.
 
 ⚙️ Operational Flow  
-When the sensors are trigged, automatic messages are sent to TagoIO dashboard using the Sigfox network:  
+The AVR is always in deep sleep mode. It is activated when the sensors are triggered, automatic messages are sent to TagoIO dashboard using the Sigfox network and return to deep sleep.    
 IDLE_TIME guarantees a maximum of one message every 5 minutes, MSG_LIMIT guarantees max 30 msg for testing purposes.   
 In case of recursive error the service stops to save credits. In this case, the user has to perform a hard reset (Ack under push button) to proceed.   
 The messages IDs depends of sensor activated and differentiates between:
 * ID1: Regular message, ID2: Regular message (new try in case of error); both IDs when only PIR sensor is activated.
 * ID4: Special message, ID5: Special message (new try in case of error); both IDs when PIR + vibration MPU6050 sensors are activated.
-* ID7 and ID8: Alarm message. Stops the local services after consecutive fails or unknown errors (until manual reset of device) to protect your Sigfox credits in case of issues.
+* ID7 and ID8: Alarm messages that stops the service. ID7: when MSG_LIMIT is reached; ID8: after consecutive fails or unknown errors (until manual reset of device) to protect your Sigfox credits in case of issues.  
 
 Additional info on Murat-Tech Channel BR: https://www.youtube.com/watch?v=eSdl9WC-ug8
 

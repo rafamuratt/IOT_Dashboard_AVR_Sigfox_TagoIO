@@ -6,10 +6,10 @@ https://610efe6f94a33700127f37f9.tago.run/dashboards/info/6290e3d3d2408f0013fc16
 
 🛠 Hardware  
 * Arduino Nano/ Uno (ATMEGA328P) @16MHz;
-* Edukit Redfox (Sigfox SoC HT32SX radio frequency transmitter/ receiver). Note: any UART SoC should work however the controll messages has to be adapted to it. 
+* Edukit Redfox (Sigfox SoC HT32SX radio frequency transmitter/ receiver). Note: *any UART SoC should work however the controll messages has to be adapted to it.* 
 * PIR sensor - detect movement around;
 * Acceleration sensor MPU6050 - detect 3D vibration (x,y and z axes);
-* Current sensor INA219 - remote check of instant voltage and current required from power supply/ batteries
+* I2C Current/ Voltage sensor INA219 - remote check of instant voltage/ current required from power supply/ batteries
 * Two batteries Samsung INR18650-35E (3.7V 3.5Ah each).
 * Detailed code explanation in the file: Edukit_IOT_WdT.ino
 

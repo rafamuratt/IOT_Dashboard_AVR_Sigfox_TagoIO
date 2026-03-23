@@ -1,6 +1,8 @@
 /*
-02/2023 V2.5 by Eng. Rafamuratt
 IOT communication using Sigfox and TagoIO dashboard
+By B.Eng. Rafa Muratt 02.2026
+MURAT-TECH CHANNEL: https://www.youtube.com/@Murat-TechChannel-EN
+MURAT-TECH HUB: https://murat-tech.eu/
 
 System Overview
 This firmware works on AVR/ Arduino, allowing data messages sending over the Sigfox network to a web dashboard from TagoIO. The dashboard can be accesed here:
@@ -31,12 +33,9 @@ Additional info on Murat-Tech Channel BR: https://www.youtube.com/watch?v=eSdl9W
 License
 This project is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
 
+
 If this project is helpfull for your application, please consider to support:
 https://www.paypal.com/donate/?hosted_button_id=8S8BJ9TT368VN
-
-Built by rafamuratt: https://murat-tech.eu/
-
-
 
 
    
